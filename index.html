@@ -9,6 +9,28 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+<!-- Local business schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"EverPane Windows",
+  "url":"https://everpanewindows.com",
+  "areaServed":{
+    "@type":"AdministrativeArea",
+    "name":"Montreal and surrounding areas"
+  },
+  "description":"Residential window and glass repair, foggy window defogging, sash and insert replacement in Montreal and surrounding areas. English and French service available.",
+  "serviceOffered":[
+    "Window glass replacement",
+    "Foggy window repair and defogging",
+    "Window sash replacement",
+    "Window insert replacement",
+    "Residential window restoration"
+  ]
+}
+</script>
+
 <style>
 :root{
   --beige:#f5f2ec;
@@ -42,8 +64,6 @@ body{
   margin:0 auto;
 }
 
-/* language toggle */
-
 .langbar{
   display:flex;
   justify-content:flex-end;
@@ -66,8 +86,6 @@ body{
   color:white;
 }
 
-/* shared blocks */
-
 .card{
   background:white;
   border-radius:30px;
@@ -75,9 +93,7 @@ body{
   box-shadow:0 18px 40px rgba(15,23,42,.08);
 }
 
-.brand{
-  text-align:center;
-}
+.brand{text-align:center}
 
 .brand img{
   max-width:200px;
@@ -179,6 +195,10 @@ button.main{
   cursor:pointer;
 }
 
+button.main:disabled{
+  opacity:.7;
+}
+
 footer{
   text-align:center;
   color:#475569;
@@ -212,7 +232,6 @@ footer{
 
     <div class="brand card">
       <img src="https://static.wixstatic.com/media/d1c75c_e1cbfe426594481196d137eeeb24543b~mv2.png" alt="EverPane Windows logo">
-
       <h1>EverPane Windows</h1>
 
       <div class="lang en">
@@ -226,7 +245,6 @@ footer{
   </div>
 </div>
 
-<!-- HERO -->
 <div class="full">
   <div class="inner hero">
 
@@ -234,21 +252,14 @@ footer{
 
       <div class="lang en">
         <h2>Window glass repair, foggy window solutions and sash replacement</h2>
-        <p>
-          We help homeowners fix broken glass, cloudy windows and worn-out window
-          components without the stress of full window replacement when it isn’t necessary.
-        </p>
+        <p>We help homeowners fix broken glass, cloudy windows and worn-out window components without the stress of full window replacement when it isn’t necessary.</p>
         <p><strong>In many cases, our services can be up to 70% more affordable than full window replacement.</strong></p>
         <p>Serving Montreal and all surrounding areas. <strong>English-friendly service.</strong></p>
       </div>
 
       <div class="lang fr">
         <h2>Réparation de vitrage, fenêtres embuées et remplacement de châssis</h2>
-        <p>
-          Nous aidons les propriétaires à réparer le verre brisé, la condensation
-          entre les vitres et les composantes de fenêtres usées, sans remplacement
-          complet lorsque ce n’est pas nécessaire.
-        </p>
+        <p>Nous aidons les propriétaires à réparer le verre brisé, la condensation entre les vitres et les composantes de fenêtres usées, sans remplacement complet lorsque ce n’est pas nécessaire.</p>
         <p><strong>Dans plusieurs cas, nos services peuvent coûter jusqu’à 70 % moins cher qu’un remplacement complet.</strong></p>
         <p>Service à Montréal et dans les environs. <strong>Service en français et en anglais.</strong></p>
       </div>
@@ -284,7 +295,6 @@ footer{
   </div>
 </div>
 
-<!-- SERVICES -->
 <div class="full">
   <div class="inner card">
 
@@ -313,7 +323,6 @@ footer{
   </div>
 </div>
 
-<!-- PROCESS -->
 <div class="full">
   <div class="inner card">
 
@@ -340,38 +349,28 @@ footer{
   </div>
 </div>
 
-<!-- TRUST -->
 <div class="full">
   <div class="inner card">
 
     <div class="lang en">
       <h3>What customers value most</h3>
       <div class="trust">
-        <div class="review">
-          <p>★★★★★ Great service, fast and affordable. Our foggy windows look brand new.</p>
-        </div>
-        <div class="guarantee">
-          <p>We stand behind our workmanship and provide honest recommendations.</p>
-        </div>
+        <div class="review">★★★★★ Great service, fast and affordable.</div>
+        <div class="guarantee">We stand behind our workmanship and provide honest recommendations.</div>
       </div>
     </div>
 
     <div class="lang fr">
       <h3>Ce que nos clients apprécient</h3>
       <div class="trust">
-        <div class="review">
-          <p>★★★★★ Service rapide et abordable. Nos fenêtres embuées sont comme neuves.</p>
-        </div>
-        <div class="guarantee">
-          <p>Nous garantissons un travail de qualité et des conseils honnêtes.</p>
-        </div>
+        <div class="review">★★★★★ Service rapide et abordable.</div>
+        <div class="guarantee">Nous garantissons un travail de qualité et des conseils honnêtes.</div>
       </div>
     </div>
 
   </div>
 </div>
 
-<!-- AREA -->
 <div class="full">
   <div class="inner">
     <div class="area">
@@ -387,7 +386,6 @@ footer{
   </div>
 </div>
 
-<!-- FORM -->
 <div class="full">
   <div class="inner card">
 
@@ -402,11 +400,14 @@ footer{
     </div>
 
     <form action="https://formsubmit.co/EverPaneWindows@gmail.com" method="POST">
+
       <input type="hidden" name="_subject" value="New EverPane Windows request">
       <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://everpanewindows.com/thank-you.html">
-So your hidden inputs section looks like this:
-  <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://everpanewindows.com/thank-you.html">
+
+      <!-- spam honeypot -->
+      <input type="text" name="_honey" style="display:none">
+
       <label>Full name / Nom</label>
       <input type="text" name="Name" required>
 
@@ -422,11 +423,10 @@ So your hidden inputs section looks like this:
       <label>Details / Détails</label>
       <textarea name="Details" rows="4"></textarea>
 
-      <button class="main" type="submit">Submit / Envoyer</button>
+      <button class="main" id="submitBtn" type="submit">Submit / Envoyer</button>
 
-      <p class="small">
-        Pricing and savings depend on window condition and access.
-      </p>
+      <p class="small">Pricing and savings depend on window condition and access.</p>
+
     </form>
 
   </div>
@@ -453,28 +453,35 @@ function setLang(lang){
 
   document.getElementById('btn-en').classList.remove('active');
   document.getElementById('btn-fr').classList.remove('active');
-
   document.getElementById('btn-'+lang).classList.add('active');
+
   document.documentElement.lang = lang;
 }
 
 function detectLanguage(){
   const saved = localStorage.getItem('everpane_lang');
-  if(saved){
-    setLang(saved);
-    return;
-  }
+  if(saved){ setLang(saved); return; }
 
-  const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-
-  if(browserLang.startsWith('fr')){
-    setLang('fr');
-  }else{
-    setLang('en');
-  }
+  const browserLang = (navigator.language || 'en').toLowerCase();
+  if(browserLang.startsWith('fr')) setLang('fr');
+  else setLang('en');
 }
 
-document.addEventListener('DOMContentLoaded', detectLanguage);
+document.addEventListener('DOMContentLoaded', () => {
+
+  detectLanguage();
+
+  const form = document.querySelector('form');
+  const btn = document.getElementById('submitBtn');
+
+  if(form && btn){
+    form.addEventListener('submit', ()=>{
+      btn.disabled = true;
+      btn.innerText = 'Sending… / Envoi…';
+    });
+  }
+
+});
 </script>
 
 </body>
