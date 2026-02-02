@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EverPane Window & Glass Repair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --beige:#f5f2ec;
+  --ink:#0f172a;
+  --muted:#64748b;
+  --blue:#2563eb;
+  --cyan:#0ea5e9;
+}
+
+/* ---- FULL BLEED FIX FOR WIX ---- */
+.fullbleed{
+  width:100vw;
+  position:relative;
+  left:50%;
+  right:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+}
+/* -------------------------------- */
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;
+  background:linear-gradient(180deg,#f5f2ec,#ffffff);
+  color:var(--ink);
+}
+
+.section-wrap{
+  padding:60px 16px;
+}
+
+.inner{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/* BRAND */
+.brand{
+  background:white;
+  border-radius:28px;
+  padding:32px 22px;
+  text-align:center;
+  box-shadow:0 25px 50px rgba(15,23,42,.08);
+}
+
+.brand img{
+  max-width:200px;
+  display:block;
+  margin:0 auto 14px;
+}
+
+.brand h1{
+  margin:0;
+  font-size:38px;
+  letter-spacing:-1px;
+}
+
+.brand p{
+  margin-top:8px;
+  color:var(--muted);
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:30px;
+}
+
+.hero-main{
+  background:white;
+  border-radius:30px;
+  padding:46px 42px;
+  box-shadow:0 30px 60px rgba(15,23,42,.08);
+}
+
+.hero-side{
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+  border-radius:30px;
+  padding:38px 34px;
+  box-shadow:0 25px 50px rgba(37,99,235,.35);
+}
+
+.pill{
+  display:inline-block;
+  background:#e8f0ff;
+  color:#1d4ed8;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:800;
+}
+
+.hero h2{
+  font-size:40px;
+  line-height:1.15;
+  margin:16px 0;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.7;
+  color:#334155;
+}
+
+.hero-side ul{
+  padding-left:18px;
+  line-height:1.85;
+}
+
+/* CARD SECTIONS */
+.card{
+  background:white;
+  border-radius:30px;
+  padding:44px 40px;
+  box-shadow:0 18px 40px rgba(15,23,42,.06);
+}
+
+h3{
+  font-size:30px;
+  margin:0 0 22px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.item{
+  background:linear-gradient(180deg,#fbfaf7,#f2efe9);
+  border-radius:18px;
+  padding:20px;
+  font-weight:700;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.icon{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* STEPS */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+}
+
+.step{
+  background:#f8fafc;
+  border-radius:18px;
+  padding:20px;
+  border-left:6px solid #2563eb;
+}
+
+/* TRUST */
+.trust{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.review,.guarantee{
+  background:#f7f9fc;
+  border-radius:22px;
+  padding:26px;
+}
+
+.stars{
+  color:#f59e0b;
+  font-size:22px;
+}
+
+/* AREA STRIP */
+.area{
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+  border-radius:28px;
+  padding:42px 26px;
+  text-align:center;
+}
+
+/* FORM */
+label{font-weight:700;font-size:14px}
+
+input,textarea{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+  margin:6px 0 16px;
+  font-size:15px;
+}
+
+button{
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+  color:white;
+  border:none;
+  padding:16px 32px;
+  border-radius:14px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.small{
+  font-size:13px;
+  color:#64748b;
+  margin-top:10px;
+}
+
+footer{
+  text-align:center;
+  color:#475569;
+  font-size:14px;
+  padding:40px 0;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .trust{grid-template-columns:1fr}
+  .hero h2{font-size:30px}
+  h3{font-size:24px}
+  .card,.hero-main{padding:28px 22px}
+}
+</style>
+</head>
+<body>
+
+<!-- BRAND -->
+<div class="fullbleed section-wrap">
+  <div class="inner">
+    <div class="brand">
+      <img src="https://static.wixstatic.com/media/d1c75c_e1cbfe426594481196d137eeeb24543b~mv2.png">
+      <h1>EverPane Window &amp; Glass Repair</h1>
+      <p>Modern residential window &amp; glass solutions</p>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="fullbleed section-wrap">
+  <div class="inner hero">
+
+    <div class="hero-main">
+      <span class="pill">Trusted local window & glass specialists</span>
+      <h2>Window glass repair, foggy window solutions<br>and sash replacement for your home</h2>
+
+      <p>
+        We help homeowners fix broken glass, cloudy windows and worn-out window components
+        without the stress of full window replacement when it isn’t necessary.
+      </p>
+
+      <p><strong>Up to 70% more affordable than full window replacement in many cases.</strong></p>
+
+      <p>
+        Serving Montreal and all surrounding areas.<br>
+        <strong>Service available in English.</strong>
+      </p>
+    </div>
+
+    <div class="hero-side">
+      <h3>Why EverPane</h3>
+      <ul>
+        <li>Repair, replacement & defogging options</li>
+        <li>Lower-cost alternatives to full replacement</li>
+        <li>Fast and clean residential work</li>
+        <li>Honest recommendations</li>
+        <li>Experienced window specialists</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="fullbleed section-wrap">
+  <div class="inner card">
+    <h3>Our services</h3>
+    <div class="grid">
+      <div class="item"><div class="icon">🪟</div>Window glass replacement</div>
+      <div class="item"><div class="icon">🌫️</div>Foggy window repair & defogging</div>
+      <div class="item"><div class="icon">🧩</div>Window sash & insert replacement</div>
+      <div class="item"><div class="icon">🛠️</div>Broken and cracked glass repair</div>
+      <div class="item"><div class="icon">♻️</div>Repair instead of full replacement</div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUE -->
+<div class="fullbleed section-wrap">
+  <div class="inner card">
+    <h3>Smarter alternatives to full window replacement</h3>
+    <p>
+      Many window problems can be resolved without removing the entire window.
+      We recommend the most practical solution — glass replacement, defogging,
+      sash replacement or targeted repairs.
+    </p>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div class="fullbleed section-wrap">
+  <div class="inner card">
+    <h3>How it works</h3>
+    <div class="steps">
+      <div class="step"><strong>1. Request service</strong><br>Submit your details.</div>
+      <div class="step"><strong>2. Inspection</strong><br>We measure and assess.</div>
+      <div class="step"><strong>3. Best solution</strong><br>Repair, defog or replace.</div>
+      <div class="step"><strong>4. Professional service</strong><br>Clean and precise work.</div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="fullbleed section-wrap">
+  <div class="inner card">
+    <h3>What customers value most</h3>
+    <div class="trust">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>Great service, fast and affordable. EverPane fixed our foggy windows and the difference was immediate.</p>
+      </div>
+      <div class="guarantee">
+        <h4>Our satisfaction promise</h4>
+        <p>We stand behind our workmanship and make sure every job is completed properly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AREA -->
+<div class="fullbleed section-wrap">
+  <div class="inner">
+    <div class="area">
+      <h3>Serving Montreal and surrounding areas</h3>
+      <p>Residential window and glass services across the Greater Montreal region.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FORM -->
+<div class="fullbleed section-wrap">
+  <div class="inner card">
+
+    <h3>Request a quote</h3>
+    <p>Submit your details and we’ll follow up to schedule a quick visit.</p>
+
+    <form action="https://formsubmit.co/EverPaneWindows@gmail.com" method="POST">
+
+      <input type="hidden" name="_subject" value="New EverPane Quote Request">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label>Full name</label>
+      <input type="text" name="Name" required>
+
+      <label>Phone number</label>
+      <input type="text" name="Phone" required>
+
+      <label>Email</label>
+      <input type="email" name="Email">
+
+      <label>Service address</label>
+      <input type="text" name="Address" required>
+
+      <label>What issue are you experiencing?</label>
+      <textarea name="Details" rows="4"></textarea>
+
+      <button type="submit">Request my quote</button>
+
+      <p class="small">
+        Pricing and savings depend on window condition and access.  
+        Up to 70% savings compared to full window replacement in common scenarios.
+      </p>
+
+    </form>
+
+  </div>
+</div>
+
+<footer class="fullbleed">
+  <p><strong>EverPane Window &amp; Glass Repair</strong></p>
+  <p>Serving Montreal and surrounding areas</p>
+  <p>Service available in English</p>
+</footer>
+
+</body>
+</html>
