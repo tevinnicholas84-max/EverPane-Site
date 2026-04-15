@@ -2,487 +2,331 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>EverPane Windows – Window & Glass Repair</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="EverPane Windows provides residential window glass repair, foggy window defogging and sash replacement in Montreal and surrounding areas. English and French service available.">
+<title>Window Glass Repair Montreal | Foggy Window Fix | EverPane Windows</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="EverPane Windows - Montreal window glass repair, foggy window defogging, sash repair. Fast, honest, up to 70% cheaper than full replacement.">
 
-<!-- Local business schema -->
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="EverPane Windows - Window Repair Montreal">
+<meta property="og:description" content="Foggy windows? Broken glass? We repair without full replacement. Montreal & surrounding areas.">
+<meta property="og:type" content="website">
+
+<!-- LOCAL SEO BOOST -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"HomeAndConstructionBusiness",
-  "name":"EverPane Windows",
-  "url":"https://everpanewindows.com",
-  "areaServed":{
-    "@type":"AdministrativeArea",
-    "name":"Montreal and surrounding areas"
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "EverPane Windows",
+  "url": "https://everpanewindows.com",
+  "email": "everpanewindows@gmail.com",
+  "telephone": "+1-XXX-XXX-XXXX",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "City",
+    "name": "Montreal"
   },
-  "description":"Residential window and glass repair, foggy window defogging, sash and insert replacement in Montreal and surrounding areas. English and French service available.",
-  "serviceOffered":[
-    "Window glass replacement",
-    "Foggy window repair and defogging",
-    "Window sash replacement",
-    "Window insert replacement",
-    "Residential window restoration"
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Montreal",
+    "addressRegion": "QC",
+    "addressCountry": "CA"
+  },
+  "serviceType": [
+    "Window glass repair",
+    "Foggy window defogging",
+    "Window sash repair",
+    "Window restoration"
   ]
 }
 </script>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --beige:#f5f2ec;
-  --ink:#0f172a;
-  --muted:#64748b;
   --blue:#2563eb;
   --cyan:#0ea5e9;
+  --dark:#0f172a;
+  --muted:#64748b;
+  --bg:#f6f3ee;
 }
 
 *{box-sizing:border-box}
 
 body{
   margin:0;
-  font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;
-  background:linear-gradient(180deg,#f5f2ec,#ffffff);
-  color:var(--ink);
+  font-family:Inter;
+  background:linear-gradient(180deg,var(--bg),#fff);
+  color:var(--dark);
 }
 
-.full{
-  width:100vw;
-  position:relative;
-  left:50%;
-  right:50%;
-  margin-left:-50vw;
-  margin-right:-50vw;
-  padding:60px 16px;
-}
-
-.inner{
-  max-width:1200px;
-  margin:0 auto;
-}
-
-.langbar{
+/* FLOAT CTA SYSTEM */
+.cta-stack{
+  position:fixed;
+  bottom:18px;
+  right:18px;
   display:flex;
-  justify-content:flex-end;
+  flex-direction:column;
   gap:10px;
-  margin-bottom:12px;
+  z-index:999;
 }
 
-.langbar button{
-  background:#e8f0ff;
-  border:none;
-  padding:8px 14px;
+.cta{
+  padding:14px 16px;
   border-radius:999px;
   font-weight:800;
-  cursor:pointer;
-  color:#1d4ed8;
+  text-decoration:none;
+  color:white;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  box-shadow:0 12px 30px rgba(0,0,0,.2);
+  text-align:center;
 }
 
-.langbar button.active{
-  background:linear-gradient(135deg,#2563eb,#0ea5e9);
-  color:white;
-}
+/* layout */
+.full{width:100vw;margin-left:-50vw;left:50%;position:relative;padding:70px 16px}
+.inner{max-width:1100px;margin:auto}
 
 .card{
   background:white;
-  border-radius:30px;
-  padding:44px 40px;
-  box-shadow:0 18px 40px rgba(15,23,42,.08);
+  border-radius:24px;
+  padding:44px;
+  box-shadow:0 18px 50px rgba(0,0,0,.08);
 }
 
-.brand{text-align:center}
-
-.brand img{
-  max-width:200px;
-  margin-bottom:12px;
-}
-
-h1{font-size:38px;margin:0}
-h2{font-size:40px;margin:16px 0}
-h3{font-size:30px;margin:0 0 22px}
-
-p{
-  font-size:18px;
-  line-height:1.7;
-  color:#334155;
-}
-
+/* HERO */
 .hero{
   display:grid;
-  grid-template-columns:1.3fr .7fr;
-  gap:30px;
-}
-
-.hero-side{
-  background:linear-gradient(135deg,#2563eb,#0ea5e9);
-  color:white;
-  border-radius:30px;
-  padding:38px 34px;
-}
-
-.hero-side ul{
-  line-height:1.8;
-  padding-left:18px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
-}
-
-.item{
-  background:linear-gradient(180deg,#fbfaf7,#f2efe9);
-  border-radius:18px;
-  padding:20px;
-  font-weight:700;
-}
-
-.steps{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:18px;
-}
-
-.step{
-  background:#f8fafc;
-  border-radius:18px;
-  padding:20px;
-  border-left:6px solid #2563eb;
-}
-
-.trust{
-  display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1.4fr .6fr;
   gap:22px;
 }
 
-.review,.guarantee{
-  background:#f7f9fc;
-  border-radius:22px;
-  padding:26px;
-}
+h1{font-size:48px;margin:0}
+h2{font-size:32px}
+p{font-size:18px;line-height:1.6;color:#334155}
 
-.area{
-  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+/* urgency bar */
+.urgency{
+  background:#0f172a;
   color:white;
-  border-radius:28px;
-  padding:42px 26px;
+  padding:10px;
   text-align:center;
+  font-weight:600;
 }
 
-label{font-weight:700;font-size:14px}
+/* highlight */
+.highlight{
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:white;
+  padding:30px;
+  border-radius:20px;
+}
 
+.badge{
+  background:rgba(255,255,255,.2);
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+
+.item{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:14px;
+  font-weight:700;
+}
+
+/* PROCESS */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+
+.step{
+  background:#f1f5f9;
+  padding:18px;
+  border-left:5px solid var(--blue);
+  border-radius:14px;
+}
+
+/* FAQ */
+details{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:14px;
+  margin-bottom:10px;
+}
+summary{font-weight:700;cursor:pointer}
+
+/* FORM */
 input,textarea{
   width:100%;
   padding:14px;
+  margin:8px 0 14px;
   border-radius:12px;
   border:1px solid #e5e7eb;
-  margin:6px 0 16px;
-  font-size:15px;
 }
 
-button.main{
-  background:linear-gradient(135deg,#2563eb,#0ea5e9);
-  color:white;
+button{
+  width:100%;
+  padding:16px;
   border:none;
-  padding:16px 32px;
   border-radius:14px;
-  font-weight:800;
+  font-weight:900;
+  color:white;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
   cursor:pointer;
 }
 
-button.main:disabled{
-  opacity:.7;
-}
+.small{font-size:13px;color:var(--muted)}
 
-footer{
-  text-align:center;
-  color:#475569;
-  font-size:14px;
-  padding:40px 0;
-}
-
-.small{font-size:13px;color:#64748b}
-
-.lang{display:none}
-.lang.active{display:block}
-
+/* mobile */
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}
-  .trust{grid-template-columns:1fr}
-  h2{font-size:30px}
-  h3{font-size:24px}
-  .card{padding:28px 22px}
+  h1{font-size:34px}
+  .card{padding:24px}
 }
 </style>
 </head>
+
 <body>
 
-<div class="full">
-  <div class="inner">
-
-    <div class="langbar">
-      <button id="btn-en" onclick="setLang('en')">EN</button>
-      <button id="btn-fr" onclick="setLang('fr')">FR</button>
-    </div>
-
-    <div class="brand card">
-      <img src="https://static.wixstatic.com/media/d1c75c_e1cbfe426594481196d137eeeb24543b~mv2.png" alt="EverPane Windows logo">
-      <h1>EverPane Windows</h1>
-
-      <div class="lang en">
-        <p>Modern residential window & glass solutions</p>
-      </div>
-      <div class="lang fr">
-        <p>Solutions modernes pour fenêtres et vitrage résidentiels</p>
-      </div>
-    </div>
-
-  </div>
+<div class="urgency">
+🔥 Fast Montreal Window Repairs — No Full Replacement Unless Needed
 </div>
 
-<div class="full">
-  <div class="inner hero">
-
-    <div class="card">
-
-      <div class="lang en">
-        <h2>Window glass repair, foggy window solutions and sash replacement</h2>
-        <p>We help homeowners fix broken glass, cloudy windows and worn-out window components without the stress of full window replacement when it isn’t necessary.</p>
-        <p><strong>In many cases, our services can be up to 70% more affordable than full window replacement.</strong></p>
-        <p>Serving Montreal and all surrounding areas. <strong>English-friendly service.</strong></p>
-      </div>
-
-      <div class="lang fr">
-        <h2>Réparation de vitrage, fenêtres embuées et remplacement de châssis</h2>
-        <p>Nous aidons les propriétaires à réparer le verre brisé, la condensation entre les vitres et les composantes de fenêtres usées, sans remplacement complet lorsque ce n’est pas nécessaire.</p>
-        <p><strong>Dans plusieurs cas, nos services peuvent coûter jusqu’à 70 % moins cher qu’un remplacement complet.</strong></p>
-        <p>Service à Montréal et dans les environs. <strong>Service en français et en anglais.</strong></p>
-      </div>
-
-    </div>
-
-    <div class="hero-side">
-
-      <div class="lang en">
-        <h3>Why EverPane Windows</h3>
-        <ul>
-          <li>Glass replacement and defogging</li>
-          <li>Lower-cost alternatives to full replacement</li>
-          <li>Clean residential work</li>
-          <li>Honest recommendations</li>
-          <li>Experienced specialists</li>
-        </ul>
-      </div>
-
-      <div class="lang fr">
-        <h3>Pourquoi EverPane Windows</h3>
-        <ul>
-          <li>Remplacement de vitrage et désembuage</li>
-          <li>Solutions moins coûteuses que le remplacement complet</li>
-          <li>Travail propre et résidentiel</li>
-          <li>Conseils honnêtes</li>
-          <li>Spécialistes expérimentés</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
+<!-- FLOATING CTA -->
+<div class="cta-stack">
+  <a class="cta" href="tel:+1XXXXXXXXXX">📞 Call Now</a>
+  <a class="cta" href="#quote">Get Free Quote</a>
 </div>
 
+<!-- HERO -->
 <div class="full">
-  <div class="inner card">
+<div class="inner hero">
 
-    <div class="lang en">
-      <h3>Our services</h3>
-      <div class="grid">
-        <div class="item">Window glass replacement</div>
-        <div class="item">Foggy window repair (defogging)</div>
-        <div class="item">Window sash and insert replacement</div>
-        <div class="item">Broken and cracked glass repair</div>
-        <div class="item">Residential window restoration</div>
-      </div>
-    </div>
-
-    <div class="lang fr">
-      <h3>Nos services</h3>
-      <div class="grid">
-        <div class="item">Remplacement de vitrage</div>
-        <div class="item">Réparation de fenêtres embuées (désembuage)</div>
-        <div class="item">Remplacement de châssis et d’inserts</div>
-        <div class="item">Réparation de verre fissuré ou brisé</div>
-        <div class="item">Restauration de fenêtres résidentielles</div>
-      </div>
-    </div>
-
-  </div>
+<div class="card">
+<h1>Montreal Window Glass Repair That Actually Saves You Money</h1>
+<p><strong>Fix foggy, cracked, or broken windows without replacing the entire frame.</strong></p>
+<p>Most homeowners save up to <strong>70%</strong> vs full replacement.</p>
 </div>
 
-<div class="full">
-  <div class="inner card">
-
-    <div class="lang en">
-      <h3>How it works</h3>
-      <div class="steps">
-        <div class="step">Submit your request</div>
-        <div class="step">On-site inspection and measurement</div>
-        <div class="step">Best solution explained</div>
-        <div class="step">Professional service</div>
-      </div>
-    </div>
-
-    <div class="lang fr">
-      <h3>Comment ça fonctionne</h3>
-      <div class="steps">
-        <div class="step">Soumettez votre demande</div>
-        <div class="step">Inspection et mesures sur place</div>
-        <div class="step">Solution la plus adaptée</div>
-        <div class="step">Service professionnel</div>
-      </div>
-    </div>
-
-  </div>
+<div class="highlight">
+<span class="badge">LOCAL • MONTREAL</span>
+<h3>We fix what others replace</h3>
+<ul>
+<li>Fog between glass panes</li>
+<li>Broken or cracked glass</li>
+<li>Seal failures</li>
+<li>Old window units</li>
+</ul>
 </div>
 
-<div class="full">
-  <div class="inner card">
-
-    <div class="lang en">
-      <h3>What customers value most</h3>
-      <div class="trust">
-        <div class="review">★★★★★ Great service, fast and affordable.</div>
-        <div class="guarantee">We stand behind our workmanship and provide honest recommendations.</div>
-      </div>
-    </div>
-
-    <div class="lang fr">
-      <h3>Ce que nos clients apprécient</h3>
-      <div class="trust">
-        <div class="review">★★★★★ Service rapide et abordable.</div>
-        <div class="guarantee">Nous garantissons un travail de qualité et des conseils honnêtes.</div>
-      </div>
-    </div>
-
-  </div>
+</div>
 </div>
 
+<!-- TRUST STRIP -->
 <div class="full">
-  <div class="inner">
-    <div class="area">
-      <div class="lang en">
-        <h3>Serving Montreal and surrounding areas</h3>
-        <p>Residential window and glass services</p>
-      </div>
-      <div class="lang fr">
-        <h3>Service à Montréal et dans les environs</h3>
-        <p>Services résidentiels de fenêtres et de vitrage</p>
-      </div>
-    </div>
-  </div>
+<div class="inner card">
+<h2>Why homeowners choose EverPane</h2>
+<div class="grid">
+<div class="item">Repair-first approach (no upsell culture)</div>
+<div class="item">Clean residential work</div>
+<div class="item">Fast turnaround</div>
+<div class="item">Honest recommendations only</div>
+</div>
+</div>
 </div>
 
+<!-- PROCESS -->
 <div class="full">
-  <div class="inner card">
-
-    <div class="lang en">
-      <h3>Request a quote</h3>
-      <p>Submit your details and we will follow up.</p>
-    </div>
-
-    <div class="lang fr">
-      <h3>Demande de soumission</h3>
-      <p>Envoyez vos informations et nous vous contacterons.</p>
-    </div>
-
-    <form action="https://formsubmit.co/EverPaneWindows@gmail.com" method="POST">
-
-      <input type="hidden" name="_subject" value="New EverPane Windows request">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://everpanewindows.com/thank-you.html">
-
-      <!-- spam honeypot -->
-      <input type="text" name="_honey" style="display:none">
-
-      <label>Full name / Nom</label>
-      <input type="text" name="Name" required>
-
-      <label>Phone / Téléphone</label>
-      <input type="text" name="Phone" required>
-
-      <label>Email</label>
-      <input type="email" name="Email">
-
-      <label>Address / Adresse</label>
-      <input type="text" name="Address">
-
-      <label>Details / Détails</label>
-      <textarea name="Details" rows="4"></textarea>
-
-      <button class="main" id="submitBtn" type="submit">Submit / Envoyer</button>
-
-      <p class="small">Pricing and savings depend on window condition and access.</p>
-
-    </form>
-
-  </div>
+<div class="inner card">
+<h2>How it works</h2>
+<div class="steps">
+<div class="step">1. You contact us</div>
+<div class="step">2. We inspect & measure</div>
+<div class="step">3. We explain repair vs replace</div>
+<div class="step">4. Fast professional repair</div>
+</div>
+</div>
 </div>
 
-<footer class="full">
-  <div class="inner">
-    <p><strong>EverPane Windows</strong></p>
-    <p>Montreal and surrounding areas · English & French</p>
-  </div>
-</footer>
+<!-- SERVICES -->
+<div class="full">
+<div class="inner card">
+<h2>Services</h2>
+<div class="grid">
+<div class="item">Glass replacement</div>
+<div class="item">Foggy window defogging</div>
+<div class="item">Sash repair</div>
+<div class="item">Window restoration</div>
+<div class="item">Seal failure repair</div>
+</div>
+</div>
+</div>
 
-<script>
-function setLang(lang){
-  localStorage.setItem('everpane_lang', lang);
+<!-- FAQ -->
+<div class="full">
+<div class="inner card">
+<h2>Frequently Asked Questions</h2>
 
-  document.querySelectorAll('.lang').forEach(el=>{
-    el.classList.remove('active');
-  });
+<details>
+<summary>Can foggy windows be fixed?</summary>
+<p>Yes, most insulated units can be repaired or restored without full replacement.</p>
+</details>
 
-  document.querySelectorAll('.'+lang).forEach(el=>{
-    el.classList.add('active');
-  });
+<details>
+<summary>Do I always need a full window replacement?</summary>
+<p>No — in many cases only the glass or seal needs repair.</p>
+</details>
 
-  document.getElementById('btn-en').classList.remove('active');
-  document.getElementById('btn-fr').classList.remove('active');
-  document.getElementById('btn-'+lang).classList.add('active');
+<details>
+<summary>How fast is service?</summary>
+<p>Usually a few days depending on parts and scheduling.</p>
+</details>
 
-  document.documentElement.lang = lang;
-}
+</div>
+</div>
 
-function detectLanguage(){
-  const saved = localStorage.getItem('everpane_lang');
-  if(saved){ setLang(saved); return; }
+<!-- QUOTE -->
+<div class="full" id="quote">
+<div class="inner card">
 
-  const browserLang = (navigator.language || 'en').toLowerCase();
-  if(browserLang.startsWith('fr')) setLang('fr');
-  else setLang('en');
-}
+<h2>Get a Free Quote</h2>
 
-document.addEventListener('DOMContentLoaded', () => {
+<form action="https://formsubmit.co/EverPaneWindows@gmail.com" method="POST">
 
-  detectLanguage();
+<input type="hidden" name="_subject" value="New Lead - EverPane Windows">
+<input type="hidden" name="_captcha" value="false">
 
-  const form = document.querySelector('form');
-  const btn = document.getElementById('submitBtn');
+<label>Name</label>
+<input type="text" name="name" required>
 
-  if(form && btn){
-    form.addEventListener('submit', ()=>{
-      btn.disabled = true;
-      btn.innerText = 'Sending… / Envoi…';
-    });
-  }
+<label>Phone</label>
+<input type="text" name="phone" required>
 
-});
-</script>
+<label>Details</label>
+<textarea name="message" rows="4"></textarea>
+
+<button type="submit">Request Quote</button>
+
+<p class="small">We respond within 24 hours.</p>
+
+</form>
+
+</div>
+</div>
 
 </body>
 </html>
