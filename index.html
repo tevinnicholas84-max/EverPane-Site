@@ -4,58 +4,310 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Foggy Window Repair Montreal | Fast Glass Fix</title>
+<title>EverPane Windows | Foggy Window Repair Montreal</title>
 
-<meta name="description" content="Foggy window repair in Montreal. Fast service, no full replacement unless needed. Save up to 70%.">
+<meta name="description" content="Foggy window repair, glass replacement, and sash restoration in Montreal. Fast service, honest pricing, no unnecessary full replacements.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="EverPane Windows - Montreal Window Repair">
+<meta property="og:description" content="Fix foggy, broken, or cracked windows without full replacement. Serving Montreal & surrounding areas.">
+<meta property="og:type" content="website">
+
+<!-- Local SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "EverPane Windows",
+  "url": "https://everpanewindows.com",
+  "email": "everpanewindows@gmail.com",
+  "areaServed": "Montreal, QC",
+  "priceRange": "$$",
+  "telephone": "+1-XXX-XXX-XXXX",
+  "serviceType": [
+    "Window glass repair",
+    "Foggy window defogging",
+    "Sash replacement",
+    "Window restoration"
+  ],
+  "description": "Residential window repair company specializing in foggy window defogging and glass replacement in Montreal."
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Inter,system-ui;background:#f6f3ee}
-.wrap{max-width:900px;margin:auto;padding:40px}
-.card{background:white;padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-h1{font-size:40px;margin:0}
-p{font-size:18px;color:#334155;line-height:1.6}
-.cta{
+:root{
+  --blue:#2563eb;
+  --cyan:#0ea5e9;
+  --dark:#0f172a;
+  --muted:#64748b;
+  --bg:#f6f3ee;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter;
+  background:linear-gradient(180deg,var(--bg),#fff);
+  color:var(--dark);
+}
+
+/* CTA BAR */
+.cta-bar{
+  position:fixed;
+  bottom:18px;
+  right:18px;
   display:flex;
+  flex-direction:column;
   gap:10px;
-  margin-top:20px;
+  z-index:999;
 }
-a{
-  flex:1;
-  text-align:center;
-  padding:16px;
-  border-radius:12px;
-  text-decoration:none;
+
+.cta-btn{
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:white;
+  padding:14px 16px;
+  border-radius:999px;
   font-weight:800;
+  text-decoration:none;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+  text-align:center;
 }
-.call{background:#2563eb;color:white}
-.quote{background:#0ea5e9;color:white}
-.badge{background:#0f172a;color:white;padding:6px 10px;border-radius:999px;font-size:12px;display:inline-block}
+
+/* layout */
+.full{width:100vw;margin-left:-50vw;left:50%;position:relative;padding:70px 16px}
+.inner{max-width:1100px;margin:auto}
+
+.card{
+  background:white;
+  border-radius:24px;
+  padding:42px;
+  box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+/* hero */
+.hero{
+  display:grid;
+  grid-template-columns:1.4fr .6fr;
+  gap:22px;
+}
+
+h1{font-size:46px;margin:0}
+h2{font-size:32px}
+p{font-size:18px;line-height:1.6;color:#334155}
+
+/* highlight box */
+.highlight{
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:white;
+  padding:28px;
+  border-radius:20px;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.2);
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+}
+
+/* grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+
+.item{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:14px;
+  font-weight:700;
+}
+
+/* before after */
+.ba{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.ba div{
+  background:#f1f5f9;
+  padding:20px;
+  border-radius:16px;
+}
+
+/* FAQ */
+.faq details{
+  background:#f8fafc;
+  padding:16px;
+  border-radius:14px;
+  margin-bottom:10px;
+}
+summary{font-weight:700;cursor:pointer}
+
+/* form */
+input,textarea{
+  width:100%;
+  padding:14px;
+  margin-top:6px;
+  margin-bottom:14px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+}
+
+button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:14px;
+  font-weight:800;
+  color:white;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  cursor:pointer;
+}
+
+.small{font-size:13px;color:var(--muted)}
+
+/* mobile */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  h1{font-size:34px}
+  .card{padding:24px}
+}
 </style>
 </head>
 
 <body>
 
-<div class="wrap">
+<!-- FLOATING CTA -->
+<div class="cta-bar">
+  <a class="cta-btn" href="tel:+1XXXXXXXXXX">📞 Call Now</a>
+  <a class="cta-btn" href="#quote">Get Quote</a>
+</div>
+
+<!-- HERO -->
+<div class="full">
+<div class="inner hero">
 
 <div class="card">
+<h1>Fix foggy & broken windows without full replacement</h1>
+<p><strong>Montreal window repair done right — honest fixes, no upselling, fast turnaround.</strong></p>
+<p>Most cases cost up to 70% less than full window replacement.</p>
+</div>
 
-<span class="badge">Montreal Local Service</span>
-
-<h1>Foggy Window Repair Without Full Replacement</h1>
-
-<p>
-Fix foggy, cracked, or sealed window failures fast — without replacing the entire frame.
-</p>
-
-<p><strong>Most homeowners save up to 70% vs full replacement.</strong></p>
-
-<div class="cta">
-<a class="call" href="tel:+1XXXXXXXXXX">Call Now</a>
-<a class="quote" href="#form">Free Quote</a>
+<div class="highlight">
+<span class="badge">LOCAL • MONTREAL</span>
+<h3>What we fix</h3>
+<ul>
+<li>Fog between glass panes</li>
+<li>Cracked / broken glass</li>
+<li>Old sash systems</li>
+<li>Insulated unit failures</li>
+</ul>
 </div>
 
 </div>
+</div>
 
+<!-- SERVICES -->
+<div class="full">
+<div class="inner card">
+<h2>Services</h2>
+<div class="grid">
+<div class="item">Glass replacement</div>
+<div class="item">Foggy window defogging</div>
+<div class="item">Sash repair</div>
+<div class="item">Window restoration</div>
+<div class="item">Seal failure repair</div>
+</div>
+</div>
+</div>
+
+<!-- BEFORE / AFTER -->
+<div class="full">
+<div class="inner card">
+<h2>Before vs After</h2>
+<div class="ba">
+<div>
+<h3>Before</h3>
+<p>Foggy, cloudy, heat loss, poor visibility</p>
+</div>
+<div>
+<h3>After</h3>
+<p>Clear glass, better insulation, restored look</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- TRUST -->
+<div class="full">
+<div class="inner card">
+<h2>Why homeowners choose us</h2>
+<div class="grid">
+<div class="item">No unnecessary full replacements</div>
+<div class="item">Clean residential work</div>
+<div class="item">Honest pricing only</div>
+<div class="item">Fast turnaround</div>
+</div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div class="full">
+<div class="inner card faq">
+<h2>FAQ</h2>
+
+<details>
+<summary>Is foggy glass repairable?</summary>
+<p>Yes — most insulated units can be repaired or restored without full window replacement.</p>
+</details>
+
+<details>
+<summary>Do you replace full windows?</summary>
+<p>Only if absolutely necessary. We focus on repair-first solutions.</p>
+</details>
+
+<details>
+<summary>How fast is service?</summary>
+<p>Usually within a few days depending on workload and glass availability.</p>
+</details>
+
+</div>
+</div>
+
+<!-- QUOTE -->
+<div class="full" id="quote">
+<div class="inner card">
+
+<h2>Get a free quote</h2>
+
+<form action="https://formsubmit.co/EverPaneWindows@gmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="New EverPane Lead">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://everpanewindows.com/thank-you.html">
+
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Phone</label>
+<input type="text" name="phone" required>
+
+<label>Details</label>
+<textarea name="message" rows="4"></textarea>
+
+<button type="submit">Request Quote</button>
+
+<p class="small">We respond within 24 hours.</p>
+
+</form>
+
+</div>
 </div>
 
 </body>
