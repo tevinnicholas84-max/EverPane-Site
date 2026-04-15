@@ -2,175 +2,175 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>EverPane Windows | Window Glass Repair Montreal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>EverPane Windows | Foggy Window Repair Montreal</title>
-
-<meta name="description" content="Foggy window repair, glass replacement, and sash restoration in Montreal. Fast service, honest pricing, no unnecessary full replacements.">
+<meta name="description" content="Affordable window glass repair, foggy window defogging, and sash replacement in Montreal. Fast, clean, and up to 70% cheaper than full replacement.">
 
 <!-- Open Graph -->
-<meta property="og:title" content="EverPane Windows - Montreal Window Repair">
-<meta property="og:description" content="Fix foggy, broken, or cracked windows without full replacement. Serving Montreal & surrounding areas.">
+<meta property="og:title" content="EverPane Windows - Glass Repair Montreal">
+<meta property="og:description" content="Fix foggy, cracked, or broken windows without full replacement. Serving Montreal & surrounding areas.">
 <meta property="og:type" content="website">
 
-<!-- Local SEO Schema -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "EverPane Windows",
-  "url": "https://everpanewindows.com",
-  "email": "everpanewindows@gmail.com",
-  "areaServed": "Montreal, QC",
-  "priceRange": "$$",
-  "telephone": "+1-XXX-XXX-XXXX",
-  "serviceType": [
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"EverPane Windows",
+  "url":"https://everpanewindows.com",
+  "email":"everpanewindows@gmail.com",
+  "areaServed":"Montreal and surrounding areas",
+  "description":"Residential window glass repair, foggy window defogging, sash replacement.",
+  "serviceType":[
     "Window glass repair",
     "Foggy window defogging",
     "Sash replacement",
     "Window restoration"
-  ],
-  "description": "Residential window repair company specializing in foggy window defogging and glass replacement in Montreal."
+  ]
 }
 </script>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
   --blue:#2563eb;
   --cyan:#0ea5e9;
-  --dark:#0f172a;
+  --bg:#f5f2ec;
+  --text:#0f172a;
   --muted:#64748b;
-  --bg:#f6f3ee;
 }
 
 *{box-sizing:border-box}
-
 body{
   margin:0;
-  font-family:Inter;
+  font-family:Inter,system-ui;
   background:linear-gradient(180deg,var(--bg),#fff);
-  color:var(--dark);
+  color:var(--text);
 }
 
-/* CTA BAR */
-.cta-bar{
+/* sticky CTA */
+.sticky{
   position:fixed;
-  bottom:18px;
-  right:18px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  z-index:999;
-}
-
-.cta-btn{
+  bottom:16px;
+  right:16px;
   background:linear-gradient(135deg,var(--blue),var(--cyan));
   color:white;
-  padding:14px 16px;
+  padding:14px 18px;
   border-radius:999px;
   font-weight:800;
   text-decoration:none;
-  box-shadow:0 12px 30px rgba(0,0,0,.18);
-  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.2);
+  z-index:999;
 }
 
 /* layout */
-.full{width:100vw;margin-left:-50vw;left:50%;position:relative;padding:70px 16px}
+.full{width:100vw;left:50%;margin-left:-50vw;position:relative;padding:60px 16px}
 .inner{max-width:1100px;margin:auto}
 
 .card{
-  background:white;
+  background:#fff;
   border-radius:24px;
-  padding:42px;
-  box-shadow:0 18px 45px rgba(0,0,0,.08);
+  padding:40px;
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
 }
+
+h1{font-size:44px;margin:0}
+h2{font-size:34px}
+p{font-size:18px;line-height:1.6;color:#334155}
 
 /* hero */
 .hero{
   display:grid;
-  grid-template-columns:1.4fr .6fr;
-  gap:22px;
+  grid-template-columns:1.3fr .7fr;
+  gap:24px;
 }
-
-h1{font-size:46px;margin:0}
-h2{font-size:32px}
-p{font-size:18px;line-height:1.6;color:#334155}
-
-/* highlight box */
-.highlight{
+.hero-box{
   background:linear-gradient(135deg,var(--blue),var(--cyan));
   color:white;
-  padding:28px;
-  border-radius:20px;
+  border-radius:24px;
+  padding:32px;
 }
 
 .badge{
   display:inline-block;
-  background:rgba(255,255,255,.2);
+  background:rgba(255,255,255,.15);
   padding:6px 12px;
   border-radius:999px;
-  font-size:12px;
+  font-size:13px;
+  margin-bottom:10px;
 }
 
-/* grid */
+/* services */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:14px;
 }
-
 .item{
   background:#f8fafc;
-  padding:16px;
+  padding:18px;
   border-radius:14px;
   font-weight:700;
 }
 
-/* before after */
-.ba{
+/* trust */
+.trust{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:16px;
+  gap:14px;
 }
-.ba div{
+.box{
   background:#f1f5f9;
   padding:20px;
   border-radius:16px;
 }
 
-/* FAQ */
-.faq details{
-  background:#f8fafc;
-  padding:16px;
-  border-radius:14px;
-  margin-bottom:10px;
-}
-summary{font-weight:700;cursor:pointer}
-
 /* form */
 input,textarea{
   width:100%;
   padding:14px;
-  margin-top:6px;
-  margin-bottom:14px;
   border-radius:12px;
   border:1px solid #e5e7eb;
+  margin-top:6px;
+  margin-bottom:14px;
 }
 
 button{
-  width:100%;
-  padding:16px;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
   border:none;
+  color:white;
+  padding:16px;
   border-radius:14px;
   font-weight:800;
-  color:white;
-  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  width:100%;
   cursor:pointer;
 }
 
 .small{font-size:13px;color:var(--muted)}
+
+.lang{display:none}
+.lang.active{display:block}
+
+/* language toggle */
+.langbar{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-bottom:10px;
+}
+.langbar button{
+  border:none;
+  padding:8px 14px;
+  border-radius:999px;
+  cursor:pointer;
+  font-weight:700;
+  background:#e2e8f0;
+}
+.langbar button.active{
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:white;
+}
 
 /* mobile */
 @media(max-width:900px){
@@ -183,10 +183,31 @@ button{
 
 <body>
 
-<!-- FLOATING CTA -->
-<div class="cta-bar">
-  <a class="cta-btn" href="tel:+1XXXXXXXXXX">📞 Call Now</a>
-  <a class="cta-btn" href="#quote">Get Quote</a>
+<a class="sticky" href="#quote">Get Free Quote</a>
+
+<div class="full">
+<div class="inner">
+
+<div class="langbar">
+<button id="btn-en" onclick="setLang('en')">EN</button>
+<button id="btn-fr" onclick="setLang('fr')">FR</button>
+</div>
+
+<div class="card">
+
+<h1>EverPane Windows</h1>
+
+<div class="lang en active">
+<p>Fix foggy, cracked, or broken windows without replacing the whole frame.</p>
+</div>
+
+<div class="lang fr">
+<p>Réparez vos fenêtres sans remplacer tout le cadre.</p>
+</div>
+
+</div>
+
+</div>
 </div>
 
 <!-- HERO -->
@@ -194,20 +215,45 @@ button{
 <div class="inner hero">
 
 <div class="card">
-<h1>Fix foggy & broken windows without full replacement</h1>
-<p><strong>Montreal window repair done right — honest fixes, no upselling, fast turnaround.</strong></p>
-<p>Most cases cost up to 70% less than full window replacement.</p>
+
+<div class="lang en active">
+<h2>Affordable window glass repair in Montreal</h2>
+<p>Up to 70% cheaper than full replacement. Fast, clean, residential service.</p>
+<p><strong>No unnecessary full replacements — only what actually needs fixing.</strong></p>
 </div>
 
-<div class="highlight">
-<span class="badge">LOCAL • MONTREAL</span>
-<h3>What we fix</h3>
+<div class="lang fr">
+<h2>Réparation de fenêtres à Montréal</h2>
+<p>Jusqu’à 70 % moins cher qu’un remplacement complet.</p>
+<p><strong>On remplace seulement ce qui est nécessaire.</strong></p>
+</div>
+
+</div>
+
+<div class="hero-box">
+
+<div class="lang en active">
+<span class="badge">Local • Montreal</span>
+<h3>Why people choose us</h3>
 <ul>
-<li>Fog between glass panes</li>
-<li>Cracked / broken glass</li>
-<li>Old sash systems</li>
-<li>Insulated unit failures</li>
+<li>Foggy window repair</li>
+<li>Glass replacement</li>
+<li>Sash & insert repair</li>
+<li>Honest pricing</li>
 </ul>
+</div>
+
+<div class="lang fr">
+<span class="badge">Local • Montréal</span>
+<h3>Pourquoi nous</h3>
+<ul>
+<li>Désembuage</li>
+<li>Remplacement de verre</li>
+<li>Réparation de châssis</li>
+<li>Prix honnêtes</li>
+</ul>
+</div>
+
 </div>
 
 </div>
@@ -216,71 +262,39 @@ button{
 <!-- SERVICES -->
 <div class="full">
 <div class="inner card">
+
+<div class="lang en active">
 <h2>Services</h2>
+</div>
+
+<div class="lang fr">
+<h2>Services</h2>
+</div>
+
 <div class="grid">
 <div class="item">Glass replacement</div>
 <div class="item">Foggy window defogging</div>
 <div class="item">Sash repair</div>
+<div class="item">Cracked glass fix</div>
 <div class="item">Window restoration</div>
-<div class="item">Seal failure repair</div>
-</div>
-</div>
 </div>
 
-<!-- BEFORE / AFTER -->
-<div class="full">
-<div class="inner card">
-<h2>Before vs After</h2>
-<div class="ba">
-<div>
-<h3>Before</h3>
-<p>Foggy, cloudy, heat loss, poor visibility</p>
-</div>
-<div>
-<h3>After</h3>
-<p>Clear glass, better insulation, restored look</p>
-</div>
-</div>
 </div>
 </div>
 
 <!-- TRUST -->
 <div class="full">
 <div class="inner card">
-<h2>Why homeowners choose us</h2>
-<div class="grid">
-<div class="item">No unnecessary full replacements</div>
-<div class="item">Clean residential work</div>
-<div class="item">Honest pricing only</div>
-<div class="item">Fast turnaround</div>
+
+<div class="trust">
+<div class="box">★★★★★ Fast service, fair pricing, no upsell.</div>
+<div class="box">We recommend repair only when it makes sense — not full replacement by default.</div>
 </div>
-</div>
-</div>
-
-<!-- FAQ -->
-<div class="full">
-<div class="inner card faq">
-<h2>FAQ</h2>
-
-<details>
-<summary>Is foggy glass repairable?</summary>
-<p>Yes — most insulated units can be repaired or restored without full window replacement.</p>
-</details>
-
-<details>
-<summary>Do you replace full windows?</summary>
-<p>Only if absolutely necessary. We focus on repair-first solutions.</p>
-</details>
-
-<details>
-<summary>How fast is service?</summary>
-<p>Usually within a few days depending on workload and glass availability.</p>
-</details>
 
 </div>
 </div>
 
-<!-- QUOTE -->
+<!-- FORM -->
 <div class="full" id="quote">
 <div class="inner card">
 
@@ -298,17 +312,36 @@ button{
 <label>Phone</label>
 <input type="text" name="phone" required>
 
+<label>Email</label>
+<input type="email" name="email">
+
 <label>Details</label>
 <textarea name="message" rows="4"></textarea>
 
-<button type="submit">Request Quote</button>
+<button type="submit">Send Request</button>
 
-<p class="small">We respond within 24 hours.</p>
+<p class="small">We usually respond within 24 hours.</p>
 
 </form>
 
 </div>
 </div>
+
+<script>
+function setLang(lang){
+  localStorage.setItem('lang', lang);
+
+  document.querySelectorAll('.lang').forEach(el=>el.classList.remove('active'));
+  document.querySelectorAll('.'+lang).forEach(el=>el.classList.add('active'));
+
+  document.querySelectorAll('.langbar button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('btn-'+lang).classList.add('active');
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  setLang(localStorage.getItem('lang') || 'en');
+});
+</script>
 
 </body>
 </html>
